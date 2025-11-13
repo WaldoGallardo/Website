@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyectos — CoolPower</title>
+  <meta name="description" content="Conoce nuestros proyectos de energía solar para la industria y el agro.">
+  <meta property="og:title" content="Proyectos — CoolPower">
+  <meta property="og:description" content="Conoce nuestros proyectos de energía solar para la industria y el agro.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/icons/icono1.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- CDN para Leaflet.js y Tailwind CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <style>
+    #map { height: 85vh; width: 100%; }
+    .projects-layout-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr; /* 2/3 para la galería, 1/3 para el mapa */
+      gap: 24px;
+      padding: 0 24px;
+    }
+    .projects-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas para las fichas */
+      gap: 24px;
+      align-content: start;
+    }
+    .project-card-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .project-card-item img { width: 100%; height: 200px; object-fit: cover; }
+    .project-card-info { padding: 16px; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="index.html">
+        <img src="assets/img/Logo2.png" alt="Logo CoolPower"/>
+      </a>
+
+      <button class="nav-toggle" aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+        ☰
+      </button>
+
+      <nav id="nav" class="nav" aria-label="Principal">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">Servicios</button>
+            <ul class="dropdown" role="menu">
+              <li><a href="servicios.html" role="menuitem">Desarrollo de Proyectos RTB</a></li>
+              <li><a href="servicios.html" role="menuitem">Ingeniería, Adquisiciones y Construcción</a></li>
+              <li><a href="servicios.html" role="menuitem">Operación y Mantenimiento</a></li>
+              <li><a href="servicios.html" role="menuitem">Consultoría</a></li>
+            </ul>
+          </li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+          <li class="only-mobile"><a href="faq.html">Preguntas frecuentes</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botón FAQ a la derecha -->
+      <a class="btn btn-faq" href="faq.html">FAQ</a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- Título estilizado con Tailwind CSS -->
+    <h1 class="text-3xl font-bold text-center my-6 text-gray-800">Nuestros Proyectos</h1>
+    
+    <div class="projects-layout-grid">
+      <!-- Columna de Galería (ocupa 2/3) -->
+      <div class="projects-gallery">
+        <!-- Ficha de Proyecto 1 -->
+        <article class="project-card-item">
+          <img src="assets/img/proyectos/result_Lolol.jpg" alt="Proyecto Lolol">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">PROYECTO LOLOL</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Grupo De Prado</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 417 kWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Lolol, O'Higgins</p>
+          </div>
+        </article>
+        <!-- Ficha de Proyecto 2 -->
+        <article class="project-card-item">
+          <img src="assets/img/proyectos/result_Chamonate.png" alt="Proyecto Chamonate">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">PROYECTO CHAMONATE</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Chamonate Spa - Raúl Campaña.</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 420 kWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Rosario, Rengo, O'Higgins</p>
+          </div>
+        </article>
+        <!-- Ficha de Proyecto 3 -->
+        <article class="project-card-item">
+          <img src="assets/img/proyectos/Bulnes.png" alt="Proyecto Bulnes">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">PROYECTO BULNES</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Asesoría e Inversiones Sta. Amelia Ltda.</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 92,4 kWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Bulnes, Región del Ñuble</p>
+          </div>
+        </article>
+      </div>
+      <!-- Columna del Mapa (ocupa 1/3) -->
+      <div id="map"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-column">
+        <h4>Socios</h4>
+        <div class="footer-logos">
+          <img src="assets/socios/socio1.avif" alt="Logo Socio 1">
+          <img src="assets/socios/socio2.avif" alt="Logo Socio 2">
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Partners</h4>
+        <div class="footer-logos">
+          <img src="assets/partners/p1.avif" alt="Logo Partner 1">
+          <img src="assets/partners/p2.avif" alt="Logo Partner 2">
+          <img src="assets/partners/p3.avif" alt="Logo Partner 3">
+          <img src="assets/partners/p4.avif" alt="Logo Partner 4">
+        </div>
+      </div>
+      <div class="footer-column footer-contact">
+        <h4>Contacto</h4>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/cool_power_spa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt=""></a>
+          <a href="https://www.linkedin.com/company/cool-power-spa/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt=""></a>
+        </div>
+        <p><strong>Cool Power Energy Projects</strong><br>Bredeneyer Str. 2b, 45133 Essen, Alemania</p>
+        <p><strong>Cool Power SpA</strong><br>Estado 318, Tercer Piso, Oficina 302, Curicó - Chile</p>
+        <p>Monseñor Sótero Sanz 161, Of. 804, Providencia, Santiago de Chile</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // 1. Inicializar el mapa centrado en Chile
+      const map = L.map('map').setView([-35.5, -71.5], 6);
+
+      // 2. Añadir la capa base de OpenStreetMap
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      // 3. Datos de los proyectos
+      const projectData = [
+          {
+              lat: -36.74, lng: -72.30,
+              title: "PROYECTO BULNES",
+              cliente: "Asesoría e Inversiones Sta. Amelia Ltda.",
+              potencia: "92,4 kWp",
+              ubicacion: "Bulnes, Región del Ñuble"
+          },
+          {
+              lat: -35.00, lng: -71.17,
+              title: "PROYECTO TENO LOS CEREZOS",
+              cliente: "Agricola Las Camelias Teno Ltda",
+              potencia: "74.8 kWp",
+              ubicacion: "Teno, Región del Maule"
+          },
+          {
+              lat: -34.73, lng: -71.65,
+              title: "PROYECTO LOLOL",
+              cliente: "Grupo De Prado",
+              potencia: "417 kWp",
+              ubicacion: "Lolol, O'Higgins"
+          },
+          {
+              lat: -34.36, lng: -70.82,
+              title: "PROYECTO CHAMONATE",
+              cliente: "Chamonate Spa - Raúl Campaña.",
+              potencia: "420 kWp",
+              ubicacion: "Rosario, Rengo, O'Higgins"
+          }
+      ];
+
+      // 4. Recorrer los datos y añadir marcadores al mapa
+      projectData.forEach(project => {
+          const popupContent = `
+              <div class="p-1">
+                  <h3 class="font-bold text-lg text-orange-600 mb-1">${project.title}</h3>
+                  <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> ${project.cliente}</p>
+                  <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> ${project.potencia}</p>
+                  <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> ${project.ubicacion}</p>
+              </div>
+          `;
+          L.marker([project.lat, project.lng]).addTo(map)
+              .bindPopup(popupContent);
+      });
+    });
+  </script>
+</body>
+</html>

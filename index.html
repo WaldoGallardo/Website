@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CoolPower</title>
+  <meta name="description" content="Empresa de servicios profesionales. Soluciones confiables para industria y pymes.">
+  <meta property="og:title" content="Tu Empresa — Soluciones Profesionales">
+  <meta property="og:description" content="Soluciones confiables para industria y pymes.">
+  <meta property="og:type" content="website">
+  
+  <link rel="icon" href="assets/icons/icono1.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="#">
+        <img src="assets/img/Logo2.png" alt="Logo de la empresa"/>
+      </a>
+   
+
+      <button class="nav-toggle" aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+        ☰
+      </button>
+
+      <nav id="nav" class="nav" aria-label="Principal">
+        <ul class="menu">
+          <li><a href="#contenido">Home</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">Servicios</button>
+            <ul class="dropdown" role="menu">
+              <li><a href="servicios.html" role="menuitem">Desarrollo de Proyectos RTB</a></li>
+              <li><a href="servicios.html" role="menuitem">Ingeniería, Adquisiciones y Construcción</a></li>
+              <li><a href="servicios.html" role="menuitem">Operación y Mantenimiento</a></li>
+              <li><a href="servicios.html" role="menuitem">Consultoría</a></li>
+            </ul>
+          </li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+
+          <!-- Ítem solo móvil para FAQ -->
+          <li class="only-mobile"><a href="faq.html">Preguntas frecuentes</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botón FAQ a la derecha -->
+      <a class="btn btn-faq" href="faq.html">FAQ</a>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       NUEVO: Carrusel Hero a pantalla completa
+       ========================================================================== -->
+  <section id="hero-carousel-section" class="hero-carousel-section" data-autoadvance="6000" aria-label="Promociones principales">
+    <div class="hero-carousel-viewport">
+      <!-- Diapositiva 1 -->
+      <article class="hero-slide" role="group" aria-roledescription="Diapositiva">
+        <!-- CAMBIAR IMAGEN: Reemplaza por una de un techo industrial con paneles FV -->
+        <img src="assets/img/proyectos/result_Lolol.jpg" alt="Instalación fotovoltaica en techo industrial." loading="eager">
+        <div class="hero-slide-text">
+          <h1>
+            <span class="desktop-only">Autoconsumo para industria y agro</span>
+            <span class="mobile-only">Autoconsumo empresarial</span>
+          </h1>
+          <p>Ingeniería y EPC on-grid, híbridos y off-grid con estándar industrial.</p>
+        </div>
+      </article>
+
+      <!-- Diapositiva 2 -->
+      <article class="hero-slide" role="group" aria-roledescription="Diapositiva">
+        <!-- CAMBIAR IMAGEN: Reemplaza por una de una planta en operación o sala eléctrica -->
+        <img src="assets/img/proyectos/Bulnes.png" alt="Sala eléctrica de una planta de energía solar.">
+        <div class="hero-slide-text">
+          <h1>
+            <span class="desktop-only">Expertos en energía solar para empresas</span>
+            <span class="mobile-only">Expertos para tu empresa</span>
+          </h1>
+          <p>Confiabilidad operacional y payback competitivo desde el mes 1.</p>
+          <a href="#contacto" class="btn btn-primary">Cotiza tu proyecto</a>
+        </div>
+      </article>
+
+      <!-- Diapositiva 3 -->
+      <article class="hero-slide" role="group" aria-roledescription="Diapositiva">
+        <!-- CAMBIAR IMAGEN: Reemplaza por una de un medidor o tablero eléctrico -->
+        <img src="assets/img/proyectos/result_Chamonate.png" alt="Medidor de energía en una instalación NetBilling.">
+        <div class="hero-slide-text">
+          <h1>
+            <span class="desktop-only">Proyectos NetBilling</span>
+            <span class="mobile-only">NetBilling para empresas</span>
+          </h1>
+          <p>Compensa tu consumo e inyecta excedentes para reducir la cuenta eléctrica.</p>
+          <a href="servicios.html" class="btn btn-primary">Nuestros Servicios</a>
+        </div>
+      </article>
+
+      <!-- Diapositiva 4 (Restaurada) -->
+      <article class="hero-slide" role="group" aria-roledescription="Diapositiva">
+        <video src="assets/video/paneles.mp4" autoplay muted loop playsinline aria-label="Video de paneles solares."></video>
+        <div class="hero-slide-text">
+          <h1>Experiencia Nacional</h1>
+          <p>Proyectos desarrollados a lo largo de Chile, adaptados a cada geografía y cliente.</p>
+          <a href="proyectos.html" class="btn btn-primary">Ver Proyectos</a>
+        </div>
+      </article>
+
+      <!-- Diapositiva 5 (Restaurada) -->
+      <article class="hero-slide" role="group" aria-roledescription="Diapositiva">
+        <video src="assets/video/b2b.mp4" autoplay muted loop playsinline aria-label="Video de inversión energética."></video>
+        <div class="hero-slide-text">
+          <h1>Inversión e Infraestructura Energética</h1>
+          <p>Desarrollamos proyectos de alta rentabilidad para fondos de inversión y family offices.</p>
+          <a href="#contacto" class="btn btn-primary">Invierte con nosotros</a>
+        </div>
+      </article>
+
+    </div>
+    <div class="hero-carousel-controls">
+      <div class="hero-carousel-pagination"></div>
+    </div>
+  </section>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Ahorra con <span class="brand">energía solar</span> y haz crecer tu empresa</h1>
+          <p>Consultoría, implementación y soporte con foco en resultados medibles.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contacto">Hablemos</a>
+          </div>
+        </div>
+        <div class="hero-media">
+  <video src="assets/video/toma1.mp4" autoplay muted loop playsinline
+         style="width:100%; border-radius:16px;">
+    
+  </video>
+</div>
+      </div>
+    </section>
+
+    <section id="about-preview" class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="assets/img/fundadores.jpg" alt="Fundadores de Cool Power">
+          </div>
+          <div class="about-text">
+            <h2>Sobre nosotros</h2>
+            <p>Cool Power es una empresa chileno-alemana.</p>
+            <p>Desarrollamos e implementamos soluciones fotovoltaicas a medida para tu empresa.</p>
+            <a href="nosotros.html" class="btn btn-primary">Saber más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="clientes" class="section clients-section">
+      <div class="container">
+        <h2>Quienes han confiado en nosotros</h2>
+      </div>
+      <div class="clients-bar" data-speed="slow">
+        <div class="clients-scroller">
+          <!-- Logos de clientes -->
+          <img src="assets/clients/anumar.png" alt="Logo Anumar">
+          <img src="assets/clients/camelias.jpg" alt="Logo Camelias">
+          <img src="assets/clients/CCU_LOGO.png" alt="Logo CCU">
+          <img src="assets/clients/chamonate.png" alt="Logo Chamonate">
+          <img src="assets/clients/deprado.png" alt="Logo Deprado">
+          <img src="assets/clients/geoiberica.png" alt="Logo Geoiberica">
+          <img src="assets/clients/inblue.png" alt="Logo Inblue">
+          <img src="assets/clients/LCP.png" alt="Logo LCP">
+          <img src="assets/clients/power-tree.jpg" alt="Logo Power Tree">
+          <img src="assets/clients/solarig.png" alt="Logo Solarig">
+          <img src="assets/clients/sungrow.png" alt="Logo Sungrow">
+          <img src="assets/clients/waldorf-corcolen.gif" alt="Logo Waldorf Corcolen">
+          <!-- Los duplicados son para el efecto de scroll infinito, no los toques -->
+        </div>
+      </div>
+    </section>
+
+    <section id="noticias" class="section">
+      <div class="container">
+        <h2>Últimas noticias</h2>
+        <div class="grid cards news-grid">
+          <!-- Nueva Noticia -->
+          <article class="card news-card">
+            <img src="assets/newsletter/news1.png" alt="Paneles solares en un campo agrícola." class="news-card-img">
+            <h3>Energía Solar para la Agroindustria</h3>
+            <p>Descubre cómo la generación fotovoltaica se está consolidando como una ventaja competitiva real para el sector agrícola.</p>
+            <a href="noticia-agroindustria.html" class="btn btn-outline">Leer más</a>
+          </article>
+          <!-- Noticia 2 -->
+          <article class="card news-card">
+            <img src="https://via.placeholder.com/400x250/1f2937/ffffff?text=Noticia+2" alt="Imagen de la noticia 2" class="news-card-img">
+            <h3>Avances en Almacenamiento de Energía</h3>
+            <p>Exploramos las nuevas tecnologías de baterías y cómo están revolucionando el autoconsumo solar.</p>
+            <a href="#" class="btn btn-outline">Leer más</a>
+          </article>
+        </div>
+        <div style="text-align: center; margin-top: 32px;"><a href="noticias.html" class="btn btn-primary">Ver todas las noticias</a></div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section alt">
+      <div class="container">
+        <h2 class="contact-title">CONTÁCTANOS</h2>
+        <form class="form contact-form" id="contactForm" novalidate>
+          <!-- Fila 1 -->
+          <div class="form-row"><label for="nombre">Nombre *</label><input id="nombre" name="nombre" type="text" required></div>
+          <div class="form-row"><label for="apellido">Apellido *</label><input id="apellido" name="apellido" type="text" required></div>
+
+          <!-- Fila 2 -->
+          <div class="form-row"><label for="email">Correo electrónico *</label><input id="email" name="email" type="email" required></div>
+          <div class="form-row"><label for="telefono">Teléfono</label><input id="telefono" name="telefono" type="tel"></div>
+
+          <!-- Fila 3 -->
+          <fieldset class="form-row checkbox-group">
+            <legend>¿Por qué medio nos conoció?</legend>
+            <div><input type="checkbox" id="medio-amigos" name="medio" value="amigos"><label for="medio-amigos">Amigos</label></div>
+            <div><input type="checkbox" id="medio-instagram" name="medio" value="instagram"><label for="medio-instagram">Instagram</label></div>
+            <div><input type="checkbox" id="medio-linkedin" name="medio" value="linkedin"><label for="medio-linkedin">LinkedIn</label></div>
+            <div><input type="checkbox" id="medio-portal" name="medio" value="portal"><label for="medio-portal">Portal Agro/Innova</label></div>
+            <div><input type="checkbox" id="medio-google" name="medio" value="google"><label for="medio-google">Google</label></div>
+            <div><input type="checkbox" id="medio-otro" name="medio" value="otro"><label for="medio-otro">Otro</label></div>
+          </fieldset>
+
+          <fieldset class="form-row checkbox-group">
+            <legend>¿Qué te interesa saber?</legend>
+            <div><input type="checkbox" id="interes-generar" name="interes" value="generar"><label for="interes-generar">Generar mi propia energía (en mi campo/empresa)</label></div>
+            <div><input type="checkbox" id="interes-colaborar" name="interes" value="colaborar"><label for="interes-colaborar">Colaborar con Cool Power</label></div>
+            <div><input type="checkbox" id="interes-otro" name="interes" value="otro_interes"><label for="interes-otro">Otro (por favor especifica)</label></div>
+          </fieldset>
+
+          <!-- Fila 4 -->
+          <div class="form-row full-width">
+            <label for="mensaje">Cuéntanos, ¿en qué te podemos ayudar?</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+          </div>
+
+          <!-- Botón -->
+          <div class="form-row full-width submit-container">
+            <button class="btn-submit" type="submit">ENVIAR</button>
+          </div>
+
+          <!-- Mensajes de estado (opcional) -->
+          <small class="error" data-for="nombre"></small>
+          <p id="formStatus" class="form-status full-width" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-column">
+        <h4>Socios</h4>
+        <div class="footer-logos">
+          <img src="assets/socios/socio1.avif" alt="Logo Socio 1">
+          <img src="assets/socios/socio2.avif" alt="Logo Socio 2">
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Partners</h4>
+        <div class="footer-logos">
+          <img src="assets/partners/p1.avif" alt="Logo Partner 1">
+          <img src="assets/partners/p2.avif" alt="Logo Partner 2">
+          <img src="assets/partners/p3.avif" alt="Logo Partner 3">
+          <img src="assets/partners/p4.avif" alt="Logo Partner 4">
+        </div>
+      </div>
+      <div class="footer-column footer-contact">
+        <h4>Contacto</h4>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/cool_power_spa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt=""></a>
+          <a href="https://www.linkedin.com/company/cool_power_spa/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt=""></a>
+        </div>
+        <p><strong>Cool Power Energy Projects</strong><br>Bredeneyer Str. 2b, 45133 Essen, Alemania</p>
+        <p><strong>Cool Power SpA</strong><br>Estado 318, Tercer Piso, Oficina 302, Curicó - Chile</p>
+        <p>Monseñor Sótero Sanz 161, Of. 804, Providencia, Santiago de Chile</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chat emergente de WhatsApp -->
+  <a href="https://wa.me/TUNUMERODEWHATSAPP" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <div class="whatsapp-message">
+      Necesitas ayuda, yo te hago tú cotización
+      <div class="whatsapp-arrow"></div>
+    </div>
+    <img src="assets/icons/whatsapp-logo.png" alt="Contactar por WhatsApp" class="whatsapp-icon">
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
