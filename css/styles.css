@@ -77,11 +77,17 @@ a:hover{color:var(--brand-dark)}
    2. Layout y Componentes Principales
    ========================================================================== */
 .site-header{
-  position: sticky; top:0; z-index:50;
+  position: sticky; top:0; z-index:1000;
   background:#fff;
   border-bottom:1px solid var(--border);
   box-shadow: 0 4px 10px rgba(0,0,0,0.03);
 }
+
+/* Asegura que el mapa y sus controles siempre estén debajo del header */
+.leaflet-pane {
+  z-index: 500 !important;
+}
+
 .header-row{display:flex;align-items:center;gap:20px;min-height:72px}
 .logo img{height:63px; display:block}
 
