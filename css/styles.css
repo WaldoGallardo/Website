@@ -746,13 +746,13 @@ a:hover{color:var(--brand-dark)}
   display: grid;
   grid-template-columns: auto 1fr; /* La imagen toma su espacio, el texto el resto */
   align-items: center;
-  gap: 48px;
+  gap: 80px;
 }
 
 .about-image img {
-  width: 150px; /* Tamaño aumentado */
-  height: 150px;
-  border-radius: 50%; /* Forma circular */
+  width: 350px; /* Tamaño modificado */
+  height: 350px;
+  border-radius: 50%; /* Ajustado para ser un círculo perfecto */
   object-fit: cover; /* Asegura que la imagen cubra el círculo sin deformarse */
   box-shadow: var(--shadow);
 }
