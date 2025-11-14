@@ -887,25 +887,34 @@ a:hover{color:var(--brand-dark)}
 /* ==========================================================================
    9. Layout: Nuevo Pie de Página
    ========================================================================== */
-.site-footer {
-  background-color: var(--bg-alt);
-  color: var(--muted);
+.site-footer {  
+  background-color: #273B7B; /* Azul oscuro solicitado */
+  color: var(--bg-alt); /* Blanco cálido de la paleta para el texto */
   padding: 48px 0;
   font-size: 14px;
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 }
 
+.footer-column {
+  text-align: center; /* Centra el texto de los párrafos y títulos */
+}
+
 .footer-column h4 {
-  color: var(--brand-ink);
+  color: #FFFFFF; /* Cambiado a blanco para contraste */
   font-size: 16px;
   margin-bottom: 16px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+
+.footer-subtitle {
+  margin-top: 24px; /* Espacio entre Socios y Partners */
+  margin-bottom: 16px;
 }
 
 .footer-logos {
@@ -917,19 +926,13 @@ a:hover{color:var(--brand-dark)}
 
 /* Estilo específico para la primera columna (Socios) */
 .footer-grid > .footer-column:first-child .footer-logos {
-  flex-direction: column-reverse;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center; /* Centra los logos de socios y el bloque de partners */
 }
 
-/* Estilo específico para la segunda columna (Partners) */
-.footer-grid > .footer-column:nth-child(2) .footer-logos {
+.footer-logos-partners {
   display: grid;
   grid-template-columns: repeat(2, auto);
-}
-
-/* Agrandar el tercer logo de la columna de Partners */
-.footer-grid > .footer-column:nth-child(2) .footer-logos img:nth-child(3) {
-  height: 42px; /* 35px * 1.2 */
 }
 
 .footer-logos img {
@@ -942,19 +945,21 @@ a:hover{color:var(--brand-dark)}
 }
 
 .footer-contact p {
-  /* Hereda el color de .site-footer (var(--muted)) */
-  margin-bottom: 12px;
+  color: var(--bg-alt); /* Asegura que el texto herede el color blanco cálido */
+  margin-bottom: 8px; /* Espacio reducido entre párrafos */
   line-height: 1.5;
 }
 
 .footer-contact strong {
-  color: var(--ink);
+  color: #FFFFFF; /* Cambiado a blanco para contraste */
   display: block;
 }
 
 .footer-socials {
   display: flex;
   gap: 16px;
+  justify-content: center; /* Centra los iconos de redes sociales */
+  margin-top: 8px; /* Pequeño ajuste para alinear mejor con el título */
   margin-bottom: 20px;
 }
 
@@ -962,7 +967,10 @@ a:hover{color:var(--brand-dark)}
   color: var(--muted);
   display: block;
 }
-.footer-socials a:hover { color: var(--brand); }
+.footer-socials a {
+  color: var(--bg-alt); /* Usamos el mismo blanco cálido del texto */
+}
+.footer-socials a:hover { color: var(--brand); } /* Mantenemos el hover naranja */
 .footer-socials img { width: 24px; height: 24px; }
 
 @media (max-width: 768px) {
