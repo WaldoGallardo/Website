@@ -73,6 +73,33 @@
         transform: translateY(0);
       }
     }
+    /* Estilos para la sección con video de fondo */
+    .hero-video-section {
+      position: relative;
+      overflow: hidden;
+      display: grid; /* Usamos grid para apilar capas */
+      place-items: center; /* Centra el contenido */
+      height: 60vh; 
+      min-height: 450px;
+    }
+    /* Hacemos que los hijos directos se apilen en la misma celda del grid */
+    .hero-video-section > * {
+      grid-area: 1 / 1;
+    }
+    .hero-video-background {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+    }
+    .hero-video-background video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    /* Asegura que el contenido del texto esté por encima del video */
+    .hero-video-section .container {
+      position: relative;
+      z-index: 2;
+    }
     .tab-panel.active {
       animation: fadeIn 0.5s ease-in-out;
     }
@@ -109,11 +136,14 @@
   </header>
 
 <main id="contenido" class="bg-white">
-    <section class="section alt" style="text-align: center;">
-      <div class="container">
-        <h1 style="font-size: clamp(2rem, 5vw, 2.75rem); font-family: 'Inter', sans-serif; font-weight: bold;">Genere su Propia Energía</h1>
-        <p class="lead" style="max-width: 800px; margin: 1rem auto 0; font-size: 1.125rem;">Diseñamos e instalamos sistemas solares fotovoltaicos "llave en mano" (EPC) para que su empresa genere y consuma su propia electricidad, reduciendo costos y dependencia de la red.</p>
-        <a href="#proceso" class="btn btn-primary" style="margin-top: 20px;">Solicitar Estudio de Ahorro</a>
+    <section class="hero-video-section">
+      <div class="hero-video-background">
+        <video src="assets/video/toma3.mp4" autoplay muted playsinline aria-label="Video de fondo de paneles solares"></video>
+      </div>
+      <div class="container text-white text-center">
+        <h1 class="text-4xl md:text-5xl font-black" style="font-size: clamp(2rem, 5vw, 3.5rem); text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Genere su Propia Energía</h1>
+        <p class="lead mt-4 max-w-3xl mx-auto text-lg md:text-xl text-white" style="text-shadow: 0 1px 3px rgba(0,0,0,0.5);">Diseñamos e instalamos sistemas solares fotovoltaicos "llave en mano" (EPC) para que su empresa genere y consuma su propia electricidad, reduciendo costos y dependencia de la red.</p>
+        <a href="#proceso" class="btn btn-primary mt-8">Solicitar Estudio de Ahorro</a>
       </div>
     </section>
 
@@ -126,28 +156,28 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div class="bg-white rounded-xl shadow-lg p-8 text-center transition-transform duration-300 hover:-translate-y-2">
             <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 mb-6">
-              <svg class="h-8 w-8 text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.106a.75.75 0 0 1 0 1.06l-1.591 1.59a.75.75 0 1 1-1.06-1.06l1.59-1.59a.75.75 0 0 1 1.06 0ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5h2.25a.75.75 0 0 1 .75.75ZM17.894 17.894a.75.75 0 0 1-1.06 0l-1.59-1.591a.75.75 0 1 1 1.06-1.06l1.59 1.59a.75.75 0 0 1 0 1.061ZM12 18.75a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-1.5a.75.75 0 0 1 .75-.75ZM5.106 17.894a.75.75 0 0 1 0-1.06l1.59-1.59a.75.75 0 1 1 1.06 1.06l-1.59 1.59a.75.75 0 0 1-1.06 0ZM3 12a.75.75 0 0 1 .75-.75h2.25a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12ZM6.106 5.106a.75.75 0 0 1 1.06 0l1.591 1.59a.75.75 0 0 1-1.06 1.06l-1.59-1.59a.75.75 0 0 1 0-1.06Z" /></svg>
+              <img src="assets/icons/vfinal/sol1.png" alt="Icono de sol" class="h-30 w-30">
             </div>
             <h3 class="text-xl font-bold text-gray-900">Generación Propia</h3>
             <p class="mt-2 text-gray-600">Cubra su consumo energético con una fuente limpia y propia.</p>
           </div>
           <div class="bg-white rounded-xl shadow-lg p-8 text-center transition-transform duration-300 hover:-translate-y-2">
             <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 mb-6">
-              <svg class="h-8 w-8 text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM9 12.75a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1-.75-.75Zm.75-2.25a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clip-rule="evenodd" /></svg>
+              <img src="assets/icons/vfinal/coin1.png" alt="Icono de moneda" class="h-30 w-30">
             </div>
             <h3 class="text-xl font-bold text-gray-900">Bajar Costos</h3>
             <p class="mt-2 text-gray-600">Reduzca drásticamente su boleta eléctrica y obtenga un ROI predecible.</p>
           </div>
           <div class="bg-white rounded-xl shadow-lg p-8 text-center transition-transform duration-300 hover:-translate-y-2">
             <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 mb-6">
-              <svg class="h-8 w-8 text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 11.99 2.25Zm1.28 14.25a.75.75 0 0 1-1.06 0l-3-3a.75.75 0 0 1 1.06-1.06l2.47 2.47 5.47-5.47a.75.75 0 0 1 1.06 1.06l-6 6Z" /></svg>
+              <img src="assets/icons/vfinal/tick1.png" alt="Icono de check" class="h-30 w-30">
             </div>
             <h3 class="text-xl font-bold text-gray-900">Energía Limpia</h3>
             <p class="mt-2 text-gray-600">Reduzca su huella de carbono y cumpla con metas de sostenibilidad.</p>
           </div>
           <div class="bg-white rounded-xl shadow-lg p-8 text-center transition-transform duration-300 hover:-translate-y-2">
             <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 mb-6">
-              <svg class="h-8 w-8 text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M3 2.25a.75.75 0 0 1 .75.75v.54l1.838-.46a9.75 9.75 0 0 1 6.617 1.2.75.75 0 0 1 .33.633l.353 3.885a.75.75 0 0 1-1.48.134l-.354-3.885a8.25 8.25 0 0 0-10.012-1.2l-1.838.46v11.54l1.838-.46a9.75 9.75 0 0 1 11.465-1.43l.057.027a.75.75 0 0 1 .278.64l.353 3.885a.75.75 0 0 1-1.48.134l-.354-3.885a8.25 8.25 0 0 0-9.68-1.53l-1.838.46V3A.75.75 0 0 1 3 2.25ZM15.75 9a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-1.5 0V9.75a.75.75 0 0 1 .75-.75Zm3.75-1.5a.75.75 0 0 0-1.5 0v13.5a.75.75 0 0 0 1.5 0V7.5Z" clip-rule="evenodd" /></svg>
+              <img src="assets/icons/vfinal/graph.png" alt="Icono de gráfico" class="h-30 w-30">
             </div>
             <h3 class="text-xl font-bold text-gray-900">Empresa Sustentable</h3>
             <p class="mt-2 text-gray-600">Posicione su marca como un referente en responsabilidad ambiental.</p>
@@ -174,7 +204,7 @@
           <div class="mt-8">
             <div id="on-grid" class="tab-panel active">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <img src="https://placehold.co/600x400/3B82F6/FFF?text=On-Grid+con+Netbilling" alt="Solución On-Grid" class="rounded-lg shadow-md">
+                <img src="assets/img/netbilling.png" alt="Solución On-Grid" class="rounded-lg shadow-md">
                 <div>
                   <h3 class="text-2xl font-bold text-gray-900">Solución On-Grid (Conectado a la Red)</h3>
                   <p class="mt-4 text-gray-600">Ideal para empresas e industrias conectadas a la red pública. Reduce su consumo y le permite inyectar excedentes bajo el marco regulatorio de Netbilling.</p>
@@ -360,6 +390,19 @@
               panel.classList.remove('active');
             }
           });
+        });
+      });
+    });
+
+    /**
+     * Intenta forzar la reproducción de videos con autoplay.
+     * Esto ayuda a evitar problemas con las políticas de los navegadores.
+     */
+    document.addEventListener('DOMContentLoaded', () => {
+      const videos = document.querySelectorAll('video[autoplay]');
+      videos.forEach(video => {
+        video.play().catch(error => {
+          console.error("El video no pudo reproducirse automáticamente: ", error);
         });
       });
     });

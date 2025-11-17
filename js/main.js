@@ -237,6 +237,18 @@
 /**
  * Scripts generales que se ejecutan en todas las páginas.
  */
-(function(){
+(function(){// Ejemplo de la solución en main.js
+const elementoQueFalta = document.querySelector('.algun-selector');
+
+if (elementoQueFalta) { // <-- ¡Esta es la comprobación!
+  elementoQueFalta.textContent = 'Nuevo Texto'; // Este código solo se ejecuta si el elemento existe
+}
+
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
+// Ejemplo de la solución en main.js
+const elementoQueFalta = document.querySelector('.algun-selector');
+
+if (elementoQueFalta) { // <-- ¡Esta es la comprobación!
+  elementoQueFalta.textContent = 'Nuevo Texto'; // Este código solo se ejecuta si el elemento existe
+}
