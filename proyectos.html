@@ -38,6 +38,10 @@
     }
     .project-card-item img { width: 100%; height: 200px; object-fit: cover; }
     .project-card-info { padding: 16px; }
+    /* Estilo para que los títulos de categoría ocupen todo el ancho */
+    .category-title {
+      grid-column: 1 / -1;
+    }
   </style>
 
   <!-- Estilos para la versión móvil -->
@@ -98,34 +102,314 @@
     <div class="projects-layout-grid">
       <!-- Columna de Galería (ocupa 2/3) -->
       <div class="projects-gallery">
-        <!-- Ficha de Proyecto 1 -->
+        <h2 class="category-title text-2xl font-bold text-gray-800 mt-4 mb-2">Proyectos Construidos</h2>
         <article class="project-card-item">
-          <img src="assets/img/proyectos/result_Lolol.jpg" alt="Proyecto Lolol">
+
+          <img src="assets/img/proy/emilio.png" alt="Proyecto San Emilio Solar">
           <div class="project-card-info">
-            <h3 class="font-bold text-lg text-orange-600 mb-1">PROYECTO LOLOL</h3>
-            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Grupo De Prado</p>
-            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 417 kWp</p>
-            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Lolol, O'Higgins</p>
+            <h3 class="font-bold text-lg text-orange-600 mb-1">San Emilio Solar</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Sungrow</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 2,99 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 6.286,18 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 1.885,85 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Maule - Curicó</p>
           </div>
         </article>
-        <!-- Ficha de Proyecto 2 -->
-        <article class="project-card-item">
-          <img src="assets/img/proyectos/result_Chamonate.png" alt="Proyecto Chamonate">
-          <div class="project-card-info">
-            <h3 class="font-bold text-lg text-orange-600 mb-1">PROYECTO CHAMONATE</h3>
-            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Chamonate Spa - Raúl Campaña.</p>
-            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 420 kWp</p>
-            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Rosario, Rengo, O'Higgins</p>
-          </div>
-        </article>
-        <!-- Ficha de Proyecto 3 -->
         <article class="project-card-item">
           <img src="assets/img/proyectos/Bulnes.png" alt="Proyecto Bulnes">
           <div class="project-card-info">
-            <h3 class="font-bold text-lg text-orange-600 mb-1">PROYECTO BULNES</h3>
-            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Asesoría e Inversiones Sta. Amelia Ltda.</p>
-            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 92,4 kWp</p>
-            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Bulnes, Región del Ñuble</p>
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Proyecto Bulnes</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Asesoría e Inversiones Sta. Amelia Ltda. - Ignacio García</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 0,09 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 189,22 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 56,76 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Ñuble - Bulnes</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="assets/img/proy/Cerezo1.png" alt="Proyecto Teno Los Cerezos">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Proyecto Teno Los Cerezos</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Agrícola Las Camelias Teno Ltda.</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 0,07 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 147,17 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 44,15 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Maule - Teno</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="assets/img/proy/avellano1.png" alt="Proyecto Teno Los Avellanos">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Proyecto Teno Los Avellanos</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Agrícola Las Camelias Teno Ltda.</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 0,03 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 63,07 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 18,92 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Maule - Teno</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="assets/img/proyectos/result_Lolol.jpg" alt="Proyecto Lolol">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Proyecto Lolol</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Grupo De Prado</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 0,42 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 883,01 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 264,90 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> O’Higgins - Lolol</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="assets/img/proyectos/result_Chamonate.png" alt="Proyecto Chamonate">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Proyecto Chamonate</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Chamonate SpA - Raúl Campaña</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 0,42 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 883,01 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 264,90 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> O’Higgins - Rengo (sector Rosario)</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="assets/img/proy/huerto1.png" alt="Proyecto Huerto Santa Mercedes">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Proyecto Huerto Santa Mercedes</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Huerto Santa Mercedes - Alejandra Briceño</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 0,11 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 231,26 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 69,38 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Maule - Molina</p>
+          </div>
+        </article>
+                <article class="project-card-item">
+          <img src="https://placehold.co/400x200/F97316/FFF?text=Angol+Solar+II" alt="Proyecto Angol Solar II">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Angol Solar II</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> MG Renovable</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 2,99 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 6.286,18 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 1.885,85 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> La Araucanía - Angol</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/F97316/FFF?text=Angol+Solar+I" alt="Proyecto Angol Solar I">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Angol Solar I</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Power Tree</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 2,99 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 6.286,18 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 1.885,85 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> La Araucanía - Angol</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/F97316/FFF?text=Los+Sauces+Solar+I" alt="Proyecto Los Sauces Solar I">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Los Sauces Solar I</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Power Tree</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 2,99 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 6.286,18 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 1.885,85 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> La Araucanía - Los Sauces</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/F97316/FFF?text=Los+Sauces+Solar+II" alt="Proyecto Los Sauces Solar II">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Los Sauces Solar II</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Power Tree</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 2,99 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 6.286,18 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 1.885,85 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> La Araucanía - Los Sauces</p>
+          </div>
+        </article>
+        
+        <h2 class="category-title text-2xl font-bold text-gray-800 mt-8 mb-2">En Construcción</h2>
+
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/F97316/FFF?text=Los+Alamos+I+Solar" alt="Proyecto Los Alamos I Solar">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Los Alamos I Solar</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> MG Renovable</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 2,99 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 6.286,18 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 1.885,85 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Biobío - Los Álamos</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/F97316/FFF?text=Carampangue+II+Solar" alt="Proyecto Carampangue II Solar">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Carampangue II Solar</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> MG Renovable</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 2,99 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 6.286,18 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 1.885,85 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Biobío - Arauco</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/F97316/FFF?text=Cahuil+Solar+II" alt="Proyecto Cahuil Solar II">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Cahuil Solar II</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Solarig</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 7,20 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 15.137,28 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 4.541,18 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Maule - San Clemente</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/F97316/FFF?text=Santa+Elisa+Solar" alt="Proyecto Santa Elisa Solar">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Santa Elisa Solar</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Solarig</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 10,60 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 22.285,44 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 6.685,63 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Ñuble - Chillán Viejo</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/F97316/FFF?text=San+Francisco+Solar" alt="Proyecto San Francisco Solar">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">San Francisco Solar</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Solarig</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 9,96 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 20.939,90 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 6.281,97 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> O’Higgins - Mostazal</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/F97316/FFF?text=Teno+Solar+IV" alt="Proyecto Teno Solar IV">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Teno Solar IV</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Sungrow</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 11,00 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 23.126,40 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 6.937,92 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Maule - Teno</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/F97316/FFF?text=Villa+Alegre+Solar" alt="Proyecto Villa Alegre Solar">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Villa Alegre Solar</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Anumar</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 11,00 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 23.126,40 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 6.937,92 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Valparaíso - La Calera</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/F97316/FFF?text=El+Huerto+Solar" alt="Proyecto El Huerto Solar">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">El Huerto Solar</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Anumar</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 11,00 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 23.126,40 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 6.937,92 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> O’Higgins - Requínoa</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/F97316/FFF?text=La+Piedra+Solar" alt="Proyecto La Piedra Solar">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">La Piedra Solar</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> TBC</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 10,80 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 22.705,92 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 6.811,78 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Metropolitana - Curacaví</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/F97316/FFF?text=Oro+Verde+Solar" alt="Proyecto Oro Verde Solar">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Oro Verde Solar</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Anumar</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 3,00 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 6.307,20 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 1.892,16 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> O’Higgins - Chimbarongo</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/F97316/FFF?text=Santa+Luisa+Solar" alt="Proyecto Santa Luisa Solar">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Santa Luisa Solar</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> Anumar</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 7,40 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Generación Anual:</strong> 15.557,76 MWh/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> 4.667,33 tCO₂/año</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Maule - Curicó</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/1E3A8A/FFF?text=Rosario+BESS" alt="Proyecto Rosario BESS">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Rosario BESS</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> CP BESS I SpA</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 40,00 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> O’Higgins - Rengo</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/1E3A8A/FFF?text=La+Piedra+BESS" alt="Proyecto La Piedra BESS">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">La Piedra BESS</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> CP BESS I SpA</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 50,00 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Metropolitana - Curacaví</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/1E3A8A/FFF?text=Los+Sauces+BESS" alt="Proyecto Los Sauces BESS">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Los Sauces BESS</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> CP BESS I SpA</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 15,00 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> La Araucanía - Los Sauces</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/1E3A8A/FFF?text=Santa+Elvira+BESS" alt="Proyecto Santa Elvira BESS">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Santa Elvira BESS</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> CP BESS I SpA</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 50,00 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Ñuble - Chillán Viejo</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/1E3A8A/FFF?text=Santa+Elisa+BESS" alt="Proyecto Santa Elisa BESS">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Santa Elisa BESS</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> CP BESS I SpA</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 100,00 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> Ñuble - Chillán Viejo</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/1E3A8A/FFF?text=Chimbarongo+BESS" alt="Proyecto Chimbarongo BESS">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Chimbarongo BESS</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> CP BESS I SpA</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 50,00 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> O’Higgins - San Fernando</p>
+          </div>
+        </article>
+        <article class="project-card-item">
+          <img src="https://placehold.co/400x200/1E3A8A/FFF?text=Pumahue+BESS" alt="Proyecto Pumahue BESS">
+          <div class="project-card-info">
+            <h3 class="font-bold text-lg text-orange-600 mb-1">Pumahue BESS</h3>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> CP BESS I SpA</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> 50,00 MWp</p>
+            <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> La Araucanía - Temuco</p>
           </div>
         </article>
       </div>
@@ -143,7 +427,7 @@
           <img src="assets/socios/socio2.avif" alt="Logo Socio 2">
           <h4 class="footer-subtitle">Partners</h4>
           <div class="footer-logos-partners">
-            <img src="assets/partners/p3.avif" alt="Logo Partner 3">
+            <img src="assets/partners/p3.avif" alt="Logo Universidad de Talca" class="logo-utal">
             <img src="assets/partners/p4.avif" alt="Logo Partner 4">
           </div>
         </div>
@@ -181,34 +465,35 @@
 
       // 3. Datos de los proyectos
       const projectData = [
-          {
-              lat: -36.74, lng: -72.30,
-              title: "PROYECTO BULNES",
-              cliente: "Asesoría e Inversiones Sta. Amelia Ltda.",
-              potencia: "92,4 kWp",
-              ubicacion: "Bulnes, Región del Ñuble"
-          },
-          {
-              lat: -35.00, lng: -71.17,
-              title: "PROYECTO TENO LOS CEREZOS",
-              cliente: "Agricola Las Camelias Teno Ltda",
-              potencia: "74.8 kWp",
-              ubicacion: "Teno, Región del Maule"
-          },
-          {
-              lat: -34.73, lng: -71.65,
-              title: "PROYECTO LOLOL",
-              cliente: "Grupo De Prado",
-              potencia: "417 kWp",
-              ubicacion: "Lolol, O'Higgins"
-          },
-          {
-              lat: -34.36, lng: -70.82,
-              title: "PROYECTO CHAMONATE",
-              cliente: "Chamonate Spa - Raúl Campaña.",
-              potencia: "420 kWp",
-              ubicacion: "Rosario, Rengo, O'Higgins"
-          }
+          { lat: -37.80, lng: -72.71, title: "Angol Solar II", cliente: "MG Renovable", potencia: "2,99 MWp", generacion: "6.286,18 MWh/año", ubicacion: "La Araucanía - Angol", status: "construido", co2: "1.885,85 tCO₂/año" },
+          { lat: -37.80, lng: -72.71, title: "Angol Solar I", cliente: "Power Tree", potencia: "2,99 MWp", generacion: "6.286,18 MWh/año", ubicacion: "La Araucanía - Angol", status: "construido", co2: "1.885,85 tCO₂/año" },
+          { lat: -38.08, lng: -72.88, title: "Los Sauces Solar I", cliente: "Power Tree", potencia: "2,99 MWp", generacion: "6.286,18 MWh/año", ubicacion: "La Araucanía - Los Sauces", status: "construido", co2: "1.885,85 tCO₂/año" },
+          { lat: -38.08, lng: -72.88, title: "Los Sauces Solar II", cliente: "Power Tree", potencia: "2,99 MWp", generacion: "6.286,18 MWh/año", ubicacion: "La Araucanía - Los Sauces", status: "construido", co2: "1.885,85 tCO₂/año" },
+          { lat: -34.98, lng: -71.23, title: "San Emilio Solar", cliente: "Sungrow", potencia: "2,99 MWp", generacion: "6.286,18 MWh/año", ubicacion: "Maule - Curicó", status: "construido", co2: "1.885,85 tCO₂/año" },
+          { lat: -36.74, lng: -72.30, title: "Proyecto Bulnes", cliente: "Asesoría e Inversiones Sta. Amelia Ltda. - Ignacio García", potencia: "0,09 MWp", generacion: "189,22 MWh/año", ubicacion: "Ñuble - Bulnes", status: "construido", co2: "56,76 tCO₂/año" },
+          { lat: -35.00, lng: -71.17, title: "Proyecto Teno Los Cerezos", cliente: "Agrícola Las Camelias Teno Ltda.", potencia: "0,07 MWp", generacion: "147,17 MWh/año", ubicacion: "Maule - Teno", status: "construido", co2: "44,15 tCO₂/año" },
+          { lat: -35.00, lng: -71.17, title: "Proyecto Teno Los Avellanos", cliente: "Agrícola Las Camelias Teno Ltda.", potencia: "0,03 MWp", generacion: "63,07 MWh/año", ubicacion: "Maule - Teno", status: "construido", co2: "18,92 tCO₂/año" },
+          { lat: -34.73, lng: -71.65, title: "Proyecto Lolol", cliente: "Grupo De Prado", potencia: "0,42 MWp", generacion: "883,01 MWh/año", ubicacion: "O’Higgins - Lolol", status: "construido", co2: "264,90 tCO₂/año" },
+          { lat: -34.40, lng: -70.86, title: "Proyecto Chamonate", cliente: "Chamonate SpA - Raúl Campaña", potencia: "0,42 MWp", generacion: "883,01 MWh/año", ubicacion: "O’Higgins - Rengo (sector Rosario)", status: "construido", co2: "264,90 tCO₂/año" },
+          { lat: -35.15, lng: -71.28, title: "Proyecto Huerto Santa Mercedes", cliente: "Huerto Santa Mercedes - Alejandra Briceño", potencia: "0,11 MWp", generacion: "231,26 MWh/año", ubicacion: "Maule - Molina", status: "construido", co2: "69,38 tCO₂/año" },
+          { lat: -37.96, lng: -73.15, title: "Los Alamos I Solar", cliente: "MG Renovable", potencia: "2,99 MWp", generacion: "6.286,18 MWh/año", ubicacion: "Biobío - Los Álamos", status: "en-construccion", co2: "1.885,85 tCO₂/año" },
+          { lat: -37.61, lng: -73.16, title: "Carampangue II Solar", cliente: "MG Renovable", potencia: "2,99 MWp", generacion: "6.286,18 MWh/año", ubicacion: "Biobío - Arauco", status: "en-construccion", co2: "1.885,85 tCO₂/año" },
+          { lat: -35.53, lng: -71.40, title: "Cahuil Solar II", cliente: "Solarig", potencia: "7,20 MWp", generacion: "15.137,28 MWh/año", ubicacion: "Maule - San Clemente", status: "en-construccion", co2: "4.541,18 tCO₂/año" },
+          { lat: -36.72, lng: -72.05, title: "Santa Elisa Solar", cliente: "Solarig", potencia: "10,60 MWp", generacion: "22.285,44 MWh/año", ubicacion: "Ñuble - Chillán Viejo", status: "en-construccion", co2: "6.685,63 tCO₂/año" },
+          { lat: -34.02, lng: -70.70, title: "San Francisco Solar", cliente: "Solarig", potencia: "9,96 MWp", generacion: "20.939,90 MWh/año", ubicacion: "O’Higgins - Mostazal", status: "en-construccion", co2: "6.281,97 tCO₂/año" },
+          { lat: -35.00, lng: -71.17, title: "Teno Solar IV", cliente: "Sungrow", potencia: "11,00 MWp", generacion: "23.126,40 MWh/año", ubicacion: "Maule - Teno", status: "en-construccion", co2: "6.937,92 tCO₂/año" },
+          { lat: -32.83, lng: -71.21, title: "Villa Alegre Solar", cliente: "Anumar", potencia: "11,00 MWp", generacion: "23.126,40 MWh/año", ubicacion: "Valparaíso - La Calera", status: "en-construccion", co2: "6.937,92 tCO₂/año" },
+          { lat: -34.28, lng: -70.98, title: "El Huerto Solar", cliente: "Anumar", potencia: "11,00 MWp", generacion: "23.126,40 MWh/año", ubicacion: "O’Higgins - Requínoa", status: "en-construccion", co2: "6.937,92 tCO₂/año" },
+          { lat: -33.40, lng: -71.13, title: "La Piedra Solar", cliente: "TBC", potencia: "10,80 MWp", generacion: "22.705,92 MWh/año", ubicacion: "Metropolitana - Curacaví", status: "en-construccion", co2: "6.811,78 tCO₂/año" },
+          { lat: -34.78, lng: -71.28, title: "Oro Verde Solar", cliente: "Anumar", potencia: "3,00 MWp", generacion: "6.307,20 MWh/año", ubicacion: "O’Higgins - Chimbarongo", status: "en-construccion", co2: "1.892,16 tCO₂/año" },
+          { lat: -34.98, lng: -71.23, title: "Santa Luisa Solar", cliente: "Anumar", potencia: "7,40 MWp", generacion: "15.557,76 MWh/año", ubicacion: "Maule - Curicó", status: "en-construccion", co2: "4.667,33 tCO₂/año" },
+          { lat: -34.40, lng: -70.86, title: "Rosario BESS", cliente: "CP BESS I SpA", potencia: "40,00 MWp", ubicacion: "O’Higgins - Rengo", status: "en-construccion", co2: "N/A" },
+          { lat: -33.40, lng: -71.13, title: "La Piedra BESS", cliente: "CP BESS I SpA", potencia: "50,00 MWp", ubicacion: "Metropolitana - Curacaví", status: "en-construccion", co2: "N/A" },
+          { lat: -38.08, lng: -72.88, title: "Los Sauces BESS", cliente: "CP BESS I SpA", potencia: "15,00 MWp", ubicacion: "La Araucanía - Los Sauces", status: "en-construccion", co2: "N/A" },
+          { lat: -36.72, lng: -72.05, title: "Santa Elvira BESS", cliente: "CP BESS I SpA", potencia: "50,00 MWp", ubicacion: "Ñuble - Chillán Viejo", status: "en-construccion", co2: "N/A" },
+          { lat: -36.72, lng: -72.05, title: "Santa Elisa BESS", cliente: "CP BESS I SpA", potencia: "100,00 MWp", ubicacion: "Ñuble - Chillán Viejo", status: "en-construccion", co2: "N/A" },
+          { lat: -34.70, lng: -71.00, title: "Chimbarongo BESS", cliente: "CP BESS I SpA", potencia: "50,00 MWp", ubicacion: "O’Higgins - San Fernando", status: "en-construccion", co2: "N/A" },
+          { lat: -38.73, lng: -72.58, title: "Pumahue BESS", cliente: "CP BESS I SpA", potencia: "50,00 MWp", ubicacion: "La Araucanía - Temuco", status: "en-construccion", co2: "N/A" }
       ];
 
       // 4. Recorrer los datos y añadir marcadores al mapa
@@ -218,6 +503,8 @@
                   <h3 class="font-bold text-lg text-orange-600 mb-1">${project.title}</h3>
                   <p class="text-sm text-gray-700"><strong class="font-semibold">Cliente:</strong> ${project.cliente}</p>
                   <p class="text-sm text-gray-700"><strong class="font-semibold">Potencia:</strong> ${project.potencia}</p>
+                  <p class="text-sm text-gray-700"><strong class="font-semibold">Generación:</strong> ${project.generacion || 'N/A'}</p>
+                  <p class="text-sm text-gray-700"><strong class="font-semibold">CO2:</strong> ${project.co2}</p>
                   <p class="text-sm text-gray-700"><strong class="font-semibold">Ubicación:</strong> ${project.ubicacion}</p>
               </div>
           `;

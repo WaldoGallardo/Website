@@ -168,6 +168,12 @@ a:hover{color:var(--brand-dark)}
   padding-top: 48px; /* Espacio para el icono */
 }
 
+.service-card {
+  text-align: center;
+  position: relative;
+  padding-top: 48px; /* Espacio para el icono */
+}
+
 .card-icon {
   position: absolute;
   top: 16px;
@@ -938,6 +944,11 @@ a:hover{color:var(--brand-dark)}
 .footer-logos img {
   height: 35px;
   object-fit: contain; /* No se cambia */
+}
+
+/* Aumenta el tamaño del logo de UTalca */
+img.logo-utal {
+  height: 60px; /* Aumentamos la especificidad para que esta regla gane */
 }
 
 .footer-logos img:hover {
