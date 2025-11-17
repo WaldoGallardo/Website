@@ -197,7 +197,7 @@
             <div class="flex justify-center -mb-px space-x-8" aria-label="Tabs">
               <button class="tab-button active text-gray-900 border-b-4 border-orange-500 whitespace-nowrap py-4 px-1 text-base font-medium" data-tab-target="#on-grid">On-Grid (Netbilling)</button>
               <button class="tab-button text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 text-base font-medium" data-tab-target="#off-grid">Off-Grid (Aislado)</button>
-              <button class="tab-button text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 text-base font-medium" data-tab-target="#hibrido">Híbrido (Diesel + BESS)</button>
+              <button class="tab-button text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 text-base font-medium" data-tab-target="#hibrido">Híbrido (Diesel + FV/BESS)</button>
               <button class="tab-button text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 text-base font-medium" data-tab-target="#bombeo">Bombeo Solar</button>
             </div>
           </div>
@@ -220,7 +220,7 @@
             </div>
             <div id="off-grid" class="tab-panel hidden">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <img src="https://placehold.co/600x400/10B981/FFF?text=Off-Grid" alt="Solución Off-Grid" class="rounded-lg shadow-md">
+                <img src="assets/img/offgrid.png" alt="Solución Off-Grid" class="rounded-lg shadow-md">
                 <div>
                   <h3 class="text-2xl font-bold text-gray-900">Solución Off-Grid (Aislado)</h3>
                   <p class="mt-4 text-gray-600">Genera y almacena energía en bancos de baterías (BESS) para autonomía total. Perfecto para zonas rurales, faenas mineras o agrícolas sin acceso estable a la red eléctrica.</p>
@@ -229,16 +229,16 @@
             </div>
             <div id="hibrido" class="tab-panel hidden">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <img src="https://placehold.co/600x400/F59E0B/FFF?text=Híbrido+con+BESS" alt="Solución Híbrida" class="rounded-lg shadow-md">
+                <img src="assets/img/hibrido.png" alt="Solución Híbrida" class="rounded-lg shadow-md">
                 <div>
-                  <h3 class="text-2xl font-bold text-gray-900">Solución Híbrida (Acoplado a Diesel/BESS)</h3>
+                  <h3 class="text-2xl font-bold text-gray-900">Solución Híbrida </h3>
                   <p class="mt-4 text-gray-600">Integramos energía solar y baterías (BESS) a su sistema de generación diésel existente. Optimiza el uso de energía solar, reduce drásticamente el consumo de combustible y asegura continuidad operacional, además de permitir el "Peak Shaving" (recorte de hora punta).</p>
                 </div>
               </div>
             </div>
             <div id="bombeo" class="tab-panel hidden">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <img src="https://placehold.co/600x400/8B5CF6/FFF?text=Bombeo+Solar" alt="Solución de Bombeo Solar" class="rounded-lg shadow-md">
+                <img src="assets/img/bombeosolar.png" alt="Solución de Bombeo Solar" class="rounded-lg shadow-md">
                 <div>
                   <h3 class="text-2xl font-bold text-gray-900">Solución de Bombeo Solar</h3>
                   <p class="mt-4 text-gray-600">Sistemas de potencia diseñados para alimentar bombas de riego agrícola. Funcionan con energía solar directa, con o sin respaldo diésel/BESS, para asegurar el riego en los momentos críticos y ahorrar en combustible o electricidad.</p>
@@ -257,15 +257,24 @@
           <p class="mt-4 text-lg text-gray-600">No instalamos paneles, diseñamos soluciones de rentabilidad. Nuestro proceso se enfoca en optimizar sus costos energéticos.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+          <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 text-center">
+            <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 mb-6">
+              <img src="assets/icons/vfinal/auditar.png" alt="Icono de auditoría" class="h-10 w-10">
+            </div>
             <h3 class="text-2xl font-bold text-blue-900 mb-4">1. Auditamos su Tarifa</h3>
             <p class="text-gray-600">Analizamos su boleta eléctrica para identificar los cargos clave que podemos reducir: consumo de energía (kWh), potencia (kW) y, sobre todo, los cargos por Hora Punta.</p>
           </div>
-          <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+          <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 text-center">
+            <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 mb-6">
+              <img src="assets/icons/vfinal/bateria1.png" alt="Icono de batería" class="h-10 w-10">
+            </div>
             <h3 class="text-2xl font-bold text-blue-900 mb-4">2. Diseñamos la Estrategia</h3>
             <p class="text-gray-600">El "Recorte de Hora Punta" (Peak Shaving) es clave. Diseñamos un sistema con Baterías (BESS) que se cargan con sol en el día y se descargan en la tarde, evitando el alto costo de la red.</p>
           </div>
-          <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+          <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 text-center">
+            <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 mb-6">
+              <img src="assets/icons/vfinal/roi.png" alt="Icono de ROI" class="h-10 w-10">
+            </div>
             <h3 class="text-2xl font-bold text-blue-900 mb-4">3. Proyectamos su Ahorro</h3>
             <p class="text-gray-600">Le entregamos un análisis financiero (ROI, VAN, TIR) que demuestra cómo la combinación de autoconsumo solar y baterías BESS impactará directamente en su última línea.</p>
           </div>
@@ -281,14 +290,23 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-100">
+            <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 mb-6">
+              <img src="assets/icons/vfinal/ingenieria.png" alt="Icono de ingeniería" class="h-10 w-10">
+            </div>
             <h3 class="text-2xl font-bold text-blue-900 mb-4">Ingeniería de Detalle</h3>
             <p class="text-gray-600">Nuestro equipo de ingenieros senior diseña cada proyecto a medida, asegurando el máximo rendimiento y el cumplimiento de toda la normativa chilena.</p>
           </div>
           <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-100">
+            <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 mb-6">
+              <img src="assets/icons/vfinal/roi_v2.png" alt="Icono de ROI" class="h-10 w-10">
+            </div>
             <h3 class="text-2xl font-bold text-blue-900 mb-4">Enfoque en ROI</h3>
             <p class="text-gray-600">Entendemos su negocio. Cada solución se evalúa no solo por su capacidad técnica, sino por su rentabilidad, retorno de la inversión y vida útil.</p>
           </div>
           <div class="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-100">
+            <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 mb-6">
+              <img src="assets/icons/vfinal/partners.png" alt="Icono de partners" class="h-10 w-10">
+            </div>
             <h3 class="text-2xl font-bold text-blue-900 mb-4">Partners de Nivel Mundial</h3>
             <p class="text-gray-600">Trabajamos solo con proveedores de primer nivel en paneles, inversores y baterías (BESS), garantizando la calidad y garantía de su inversión.</p>
           </div>
