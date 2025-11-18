@@ -26,7 +26,7 @@
 
       <nav id="nav" class="nav" aria-label="Principal">
         <ul class="menu">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#contenido">Home</a></li>
           <li class="has-dropdown">
             <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">Servicios</button>
             <ul class="dropdown" role="menu">
@@ -38,12 +38,14 @@
           </li>
           <li><a href="proyectos.html">Proyectos</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="noticias.html" aria-current="page">Noticias</a></li>
+          <li><a href="noticias.html" aria-current="page">Noticias</a></li> <!-- aria-current indica la página activa -->
           <li><a href="contacto.html">Contacto</a></li>
+
+          <!-- Ítem solo móvil para FAQ -->
           <li class="only-mobile"><a href="faq.html">Preguntas frecuentes</a></li>
         </ul>
       </nav>
-
+      <!-- Botón FAQ a la derecha -->
       <a class="btn btn-faq" href="faq.html">FAQ</a>
     </div>
   </header>
@@ -55,21 +57,149 @@
         <p class="muted">Información relevante sobre la industria energética, guías y casos de estudio.</p>
 
         <div class="grid cards news-grid">
-          <!-- Nuevo Artículo -->
+          
           <article class="card news-card">
-            <img src="assets/newsletter/news1.png" alt="Paneles solares en un campo agrícola." class="news-card-img">
-            <h3>Energía Solar para la Agroindustria: De Costo a Ventaja Competitiva</h3>
-            <p>En un escenario de alzas sostenidas en los costos de producción, la agroindustria chilena está encontrando en la energía solar una solución estratégica.</p>
-            <a href="noticia-agroindustria.html" class="btn btn-outline">Leer más</a>
+            <img src="https://static.wixstatic.com/media/4d0425_a21563ca7e894bb481689e569e75f3d2~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png" alt="Imagen para Energía solar para la agroindustria: de costo a ventaja competitiva" class="news-card-img">
+            <h3>Energía solar para la agroindustria: de costo a ventaja competitiva</h3>
+            <p>Lejos de ser una tendencia pasajera, la generación fotovoltaica se está consolidando como una ventaja competitiva real para el sector agrícola....</p>
+            <a href="noticia-energía-solar-para-la-agroindustria-de-costo-a-ventaja-competitiva.html" class="btn btn-outline">Leer más</a>
           </article>
 
-          <!-- Artículo de ejemplo 2 -->
           <article class="card news-card">
-            <img src="https://via.placeholder.com/400x250/1f2937/ffffff?text=Noticia+2" alt="Imagen de la noticia 2" class="news-card-img">
-            <h3>Avances en Almacenamiento de Energía</h3>
-            <p>Exploramos las nuevas tecnologías de baterías y cómo están revolucionando el autoconsumo solar.</p>
-            <a href="#" class="btn btn-outline">Leer más</a>
+            <img src="https://static.wixstatic.com/media/4d0425_62abb2019ea648fd9c927f9c612d88c3~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png" alt="Imagen para ¿Qué tipo de sistema solar conviene más para tu empresa agrícola? On-Grid vs. Off-Grid" class="news-card-img">
+            <h3>¿Qué tipo de sistema solar conviene más para tu empresa agrícola? On-Grid vs. Off-Grid</h3>
+            <p>Cada vez más empresas agrícolas en Chile están evaluando invertir en energía solar para reducir costos operacionales, asegurar un...</p>
+            <a href="noticia-qué-tipo-de-sistema-solar-conviene-más-para-tu-empresa-agrícola-on-grid-vs-off-grid.html" class="btn btn-outline">Leer más</a>
           </article>
+
+          <article class="card news-card">
+            <img src="https://static.wixstatic.com/media/4d0425_66ab18eb5a024d79a07c6a0328fd7736~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png" alt="Imagen para 5 razones por las que tu industria necesita un sistema fotovoltaico ahora" class="news-card-img">
+            <h3>5 razones por las que tu industria necesita un sistema fotovoltaico ahora</h3>
+            <p>5 razones por las que cada vez más industrias están invirtiendo en energía solar —y por qué tú también deberías considerarlo...</p>
+            <a href="noticia-5-razones-por-las-que-tu-industria-necesita-un-sistema-fotovoltaico-ahora.html" class="btn btn-outline">Leer más</a>
+          </article>
+
+          <article class="card news-card">
+            <img src="https://static.wixstatic.com/media/4d0425_4d5d581945c04e3ab57e8ddadb3bb350~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png" alt="Imagen para Riego con Sol: Reduce tus costos energéticos con energía fotovoltaica" class="news-card-img">
+            <h3>Riego con Sol: Reduce tus costos energéticos con energía fotovoltaica</h3>
+            <p>La agroindustria chilena enfrenta desafíos crecientes: sequías prolongadas,
+aumento en las tarifas eléctricas y presión por mantener la competitividad en los mercados
+internacionales....</p>
+            <a href="noticia-riego-con-sol-reduce-tus-costos-energéticos-con-energía-fotovoltaica.html" class="btn btn-outline">Leer más</a>
+          </article>
+
+          <article class="card news-card">
+            <img src="https://static.wixstatic.com/media/4d0425_a675f6cf566d427aaa9fbf98c9793b59~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png" alt="Imagen para Energía solar y baterías de almacenamiento: ¿Cuándo combinar ambas para maximizar la eficiencia?" class="news-card-img">
+            <h3>Energía solar y baterías de almacenamiento: ¿Cuándo combinar ambas para maximizar la eficiencia?</h3>
+            <p>En el contexto actual de transición energética, la combinación de sistemas fotovoltaicos con baterías de almacenamiento se ha convertido en una alternativa cada vez más estratégica para empresas e industrias que buscan eficiencia, ahorro y autonomía energética...</p>
+            <a href="noticia-energía-solar-y-baterías-de-almacenamiento-cuándo-combinar-ambas-para-maximizar-la-eficiencia.html" class="btn btn-outline">Leer más</a>
+          </article>
+
+          <article class="card news-card">
+            <img src="https://static.wixstatic.com/media/4d0425_1ee5f35339b0487999435676aa54e45b~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png" alt="Imagen para En tiempo de crisis la independencia energética es una ventaja" class="news-card-img">
+            <h3>En tiempo de crisis la independencia energética es una ventaja</h3>
+            <p>Depender de fuentes externas de energía pone en riesgo la estabilidad de cualquier economía. En un mundo cada vez más interconectado,...</p>
+            <a href="noticia-en-tiempo-de-crisis-la-independencia-energética-es-una-ventaja.html" class="btn btn-outline">Leer más</a>
+          </article>
+
+          <article class="card news-card">
+            <img src="https://static.wixstatic.com/media/4d0425_06e411a3180e465fb354f3a5ddfedac4~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png" alt="Imagen para Minería y Energía Solar: Cool Power, un aliado estratégico" class="news-card-img">
+            <h3>Minería y Energía Solar: Cool Power, un aliado estratégico</h3>
+            <p>En el corazón del desarrollo económico chileno, la minería sigue siendo uno de los pilares fundamentales del país. Sin embargo, el sector...</p>
+            <a href="noticia-minería-y-energía-solar-cool-power-un-aliado-estratégico.html" class="btn btn-outline">Leer más</a>
+          </article>
+
+          <article class="card news-card">
+            <img src="https://static.wixstatic.com/media/4d0425_5436ee08a52b49f49b65dbfe96237684~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png" alt="Imagen para Energía renovable en Ecuador: Cool Power participa en misión comercial de ProChile" class="news-card-img">
+            <h3>Energía renovable en Ecuador: Cool Power participa en misión comercial de ProChile</h3>
+            <p>Recientemente, tuvimos el privilegio de ser seleccionados para participar en la Misión Comercial a Ecuador, organizada por ProChile...</p>
+            <a href="noticia-energía-renovable-en-ecuador-cool-power-participa-en-misión-comercial-de-prochile.html" class="btn btn-outline">Leer más</a>
+          </article>
+
+          <article class="card news-card">
+            <img src="https://static.wixstatic.com/media/4d0425_e9e6d04711e5480db1cfaddc842b084b~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png" alt="Imagen para Cool Power lleva su experiencia en energía solar a Ecuador" class="news-card-img">
+            <h3>Cool Power lleva su experiencia en energía solar a Ecuador</h3>
+            <p>Cool Power ha sido seleccionada como una de las 10 empresas chilenas que participarán a finales de marzo en la Misión de Prospección...</p>
+            <a href="noticia-cool-power-lleva-su-experiencia-en-energía-solar-a-ecuador.html" class="btn btn-outline">Leer más</a>
+          </article>
+
+          <article class="card news-card">
+            <img src="https://static.wixstatic.com/media/4d0425_b64ff9b8aceb489a98cf33a5082525e5~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png" alt="Imagen para ¿Cuántos paneles solares necesitas para cubrir tus necesidades energéticas?" class="news-card-img">
+            <h3>¿Cuántos paneles solares necesitas para cubrir tus necesidades energéticas?</h3>
+            <p>La energía solar se posiciona como una solución económica y ecológica para reducir costos y apostar por la sostenibilidad. Una de las...</p>
+            <a href="noticia-cuántos-paneles-solares-necesitas-para-cubrir-tus-necesidades-energéticas.html" class="btn btn-outline">Leer más</a>
+          </article>
+
+          <article class="card news-card">
+            <img src="https://static.wixstatic.com/media/4d0425_e7ead4acf9224f5386d0d671907c436d~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png" alt="Imagen para Genera tu propia electricidad: No tengas pérdidas ante cortes de luz" class="news-card-img">
+            <h3>Genera tu propia electricidad: No tengas pérdidas ante cortes de luz</h3>
+            <p>El reciente apagón que afectó a gran parte de Chile de las semana pasada (25 de febrero de 2025) ha dejado en evidencia lo crucial que es...</p>
+            <a href="noticia-genera-tu-propia-electricidad-no-tengas-pérdidas-ante-cortes-de-luz.html" class="btn btn-outline">Leer más</a>
+          </article>
+
+          <article class="card news-card">
+            <img src="https://static.wixstatic.com/media/4d0425_53afc337c2b043a5ba1546e3acb4f2e1~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png" alt="Imagen para Cómo reducir costos de riego con Energía Fotovoltaica en la Agricultura Chilena" class="news-card-img">
+            <h3>Cómo reducir costos de riego con Energía Fotovoltaica en la Agricultura Chilena</h3>
+            <p>En un país como Chile, donde la agricultura es una de las principales actividades económicas.  La energía fotovoltaica se ha convertido...</p>
+            <a href="noticia-cómo-reducir-costos-de-riego-con-energía-fotovoltaica-en-la-agricultura-chilena.html" class="btn btn-outline">Leer más</a>
+          </article>
+
+          <article class="card news-card">
+            <img src="https://static.wixstatic.com/media/4d0425_c56a6bde6dd84adbaf6bc6201626cbdd~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png" alt="Imagen para Transforma tu energía en ahorro con Autoconsumo Fotovoltaico " class="news-card-img">
+            <h3>Transforma tu energía en ahorro con Autoconsumo Fotovoltaico </h3>
+            <p>El 2025 es el año perfecto para dar un paso hacia un futuro más sustentable, aprovechar las bondades de la energía solar y reducir tus...</p>
+            <a href="noticia-transforma-tu-energía-en-ahorro-con-autoconsumo-fotovoltaico.html" class="btn btn-outline">Leer más</a>
+          </article>
+
+          <article class="card news-card">
+            <img src="https://static.wixstatic.com/media/4d0425_05e3c979bf814895a09ca3377c1c800b~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png" alt="Imagen para ¡YA LLEGARON LAS ALZAS DE LUZ! Cómo puedes cambiar rápidamente a energía fotovoltaica" class="news-card-img">
+            <h3>¡YA LLEGARON LAS ALZAS DE LUZ! Cómo puedes cambiar rápidamente a energía fotovoltaica</h3>
+            <p>La preocupación por las alzas en las tarifas eléctricas ha crecido. Una de las soluciones más efectivas es la energía fotovoltaica....</p>
+            <a href="noticia-ya-llegaron-las-alzas-de-luz-cómo-puedes-cambiar-rápidamente-a-energía-fotovoltaica.html" class="btn btn-outline">Leer más</a>
+          </article>
+
+          <article class="card news-card">
+            <img src="https://static.wixstatic.com/media/4d0425_844895b660f341108a637675a70faa4d~mv2.jpeg/v1/fit/w_1000,h_1000,al_c,q_80/file.png" alt="Imagen para ¿Para qué sistemas fotovoltaicos BESS para tu empresa?" class="news-card-img">
+            <h3>¿Para qué sistemas fotovoltaicos BESS para tu empresa?</h3>
+            <p>Integrar sistemas fotovoltaicos con almacenamiento de energía en baterías representa una inversión estratégica para cualquier empresa...</p>
+            <a href="noticia-para-qué-sistemas-fotovoltaicos-bess-para-tu-empresa.html" class="btn btn-outline">Leer más</a>
+          </article>
+
+          <article class="card news-card">
+            <img src="https://static.wixstatic.com/media/4d0425_e46a29e6ce4f4039b900393b179137aa~mv2.jpg/v1/fit/w_940,h_788,al_c,q_80/file.png" alt="Imagen para Instalación de paneles solares en tu casa, empresa o terreno" class="news-card-img">
+            <h3>Instalación de paneles solares en tu casa, empresa o terreno</h3>
+            <p>Te informamos sobre todo lo que necesitas saber sobre la instalación de paneles solares y crear tu propia energía con un proyecto fotovoltai...</p>
+            <a href="noticia-instalación-de-paneles-solares-en-tu-casa-empresa-o-terreno.html" class="btn btn-outline">Leer más</a>
+          </article>
+
+          <article class="card news-card">
+            <img src="https://static.wixstatic.com/media/4d0425_44cd3d0c19cd4c1bba17d8b6f0b84217~mv2.jpg/v1/fit/w_940,h_788,al_c,q_80/file.png" alt="Imagen para Alza en cuentas de luz: Tiempo para invertir en autoconsumo fotovoltaico" class="news-card-img">
+            <h3>Alza en cuentas de luz: Tiempo para invertir en autoconsumo fotovoltaico</h3>
+            <p>En 2024 las tarifas eléctricas sufrirán una considerable alza y los módulos fotovoltaicos se encuentran en valores bastante bajos, lo que...</p>
+            <a href="noticia-alza-en-cuentas-de-luz-tiempo-para-invertir-en-autoconsumo-fotovoltaico.html" class="btn btn-outline">Leer más</a>
+          </article>
+
+          <article class="card news-card">
+            <img src="https://static.wixstatic.com/media/4d0425_208b1ad6a7f149e5ad1a2247f9be6d69~mv2.jpg/v1/fit/w_940,h_788,al_c,q_80/file.png" alt="Imagen para Autoconsumo fotovoltaico: Genera tu propia energía" class="news-card-img">
+            <h3>Autoconsumo fotovoltaico: Genera tu propia energía</h3>
+            <p>¡Empieza a generar tu propia energía limpia que te ayuda a reducir tus costos de engería! En Cool Power nos especializamos en diseñar e...</p>
+            <a href="noticia-autoconsumo-fotovoltaico-genera-tu-propia-energía.html" class="btn btn-outline">Leer más</a>
+          </article>
+
+          <article class="card news-card">
+            <img src="https://static.wixstatic.com/media/4d0425_4636b9c5e30d4c7aa26c2bf4f784966b~mv2.jpg/v1/fit/w_940,h_788,al_c,q_80/file.png" alt="Imagen para Your opportunity: Chile's growing energy storage market" class="news-card-img">
+            <h3>Your opportunity: Chile's growing energy storage market</h3>
+            <p>Attention international renewable energy investors: Chile is on the brink of becoming an energy storage powerhouse. Chile is about to...</p>
+            <a href="noticia-your-opportunity-chiles-growing-energy-storage-market.html" class="btn btn-outline">Leer más</a>
+          </article>
+
+          <article class="card news-card">
+            <img src="https://static.wixstatic.com/media/4d0425_da522df1116b413c84cd0a604676a04b~mv2.jpg/v1/fit/w_940,h_788,al_c,q_80/file.png" alt="Imagen para Cool Power celebrates its 5th anniversary" class="news-card-img">
+            <h3>Cool Power celebrates its 5th anniversary</h3>
+            <p>5 years ago Felipe Chaparro and Francisco Sáez founded the company Cool Power SpA in the city of Curicó, Maule region, Chile. Since 2023...</p>
+            <a href="noticia-cool-power-celebrates-its-5th-anniversary.html" class="btn btn-outline">Leer más</a>
+          </article>
+
         </div>
       </div>
     </section>
@@ -80,20 +210,20 @@
       <div class="footer-column">
         <h4>Socios</h4>
         <div class="footer-logos">
-          <img src="assets/socios/socio1.avif" alt="Logo Socio 1">
-          <img src="assets/socios/socio2.avif" alt="Logo Socio 2">
+          <img src="assets/socios/socio1.avif" alt="Logo Socio 1" />
+          <img src="assets/socios/socio2.avif" alt="Logo Socio 2" />
           <h4 class="footer-subtitle">Partners</h4>
           <div class="footer-logos-partners">
-            <img src="assets/partners/p3.avif" alt="Logo Universidad de Talca" class="logo-utal">
-            <img src="assets/partners/p4.avif" alt="Logo Partner 4">
+            <img src="assets/partners/p3.png" alt="Logo Universidad de Talca" class="logo-utal" />
+            <img src="assets/partners/p4.avif" alt="Logo Partner 4" />
           </div>
         </div>
       </div>
       <div class="footer-column footer-contact">
         <h4>Contacto</h4>
         <div class="footer-socials">
-          <a href="https://www.instagram.com/cool_power_spa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt=""></a>
-          <a href="https://www.linkedin.com/company/cool-power-spa/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt=""></a>
+          <a href="https://www.instagram.com/cool_power_spa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" /></a>
+          <a href="https://www.linkedin.com/company/cool_power_spa/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" /></a>
         </div>
         <p><strong>Cool Power Energy Projects</strong><br>Bredeneyer Str. 2b, 45133 Essen, Alemania</p>
         <p><strong>Cool Power SpA</strong><br>Estado 318, Tercer Piso, Oficina 302, Curicó - Chile</p>
@@ -101,11 +231,11 @@
       </div>
     </div>
   </footer>
-
+  
   <script src="js/main.js"></script>
 
   <!-- Chat emergente de WhatsApp -->
-  <a href="https://wa.me/56912345678" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+  <a href="https://wa.me/TUNUMERODEWHATSAPP" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
     <div class="whatsapp-message">
       Necesitas ayuda, yo te hago tú cotización
       <div class="whatsapp-arrow"></div>
